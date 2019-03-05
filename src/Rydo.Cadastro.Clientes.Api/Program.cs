@@ -12,6 +12,8 @@ namespace Rydo.Cadastro.Clientes.Api
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseIISIntegration()
+                .UseKestrel()
                 .UseStartup<Startup>();
     }
 }
