@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Rydo.Cadastro.Clientes.Api.Rydo.Cadastro.Clientes.IoC;
 
 namespace Rydo.Cadastro.Clientes.Api
