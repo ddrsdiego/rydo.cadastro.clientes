@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace Rydo.Cadastro.Clientes.Api.Controllers
@@ -15,7 +16,7 @@ namespace Rydo.Cadastro.Clientes.Api.Controllers
         public async Task<IActionResult> Get()
         {
             await Task.CompletedTask;
-            return Ok();
+            return Ok(new { id = Guid.NewGuid().ToString(), message = "Ping", create_at = DateTime.Now });
         }
     }
 }
